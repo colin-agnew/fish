@@ -8,6 +8,7 @@ test -s "$HOME/.config/envman/load.fish"; and source "$HOME/.config/envman/load.
 set fish_greeting ""
 
 set -gx TERM xterm-256color
+set -gx EDITOR nvim
 
 # theme
 set -g theme_color_scheme terminal-dark
@@ -18,10 +19,11 @@ set -g theme_hostname always
 
 # aliases
 alias ls "ls -p -G"
-alias la "ls -A"
+alias la "ls -a"
 alias ll "ls -l"
 alias lla "ll -A"
 alias g git
+alias rr "ranger"
 
 
 set -gx PATH bin $PATH
